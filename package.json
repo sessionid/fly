@@ -1,5 +1,5 @@
 {
-  "name": "fly",
+  "name": "sessionid-fly",
   "version": "1.0.1",
   "description": "shell progress bar",
   "main": "index.js",
