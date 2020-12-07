@@ -2,7 +2,7 @@ const { BlockProgress, CONSTANTS: { BACKGROUND } } = require('../');
 const { delay, randNatural, shuffle } = require('./assist');
 
 (async () => {
-    const total = 1279;
+    const total = 270;
     const arr = Array.apply(null, { length: total }).map((el, idx) => idx);
     shuffle(arr);
 
@@ -15,4 +15,5 @@ const { delay, randNatural, shuffle } = require('./assist');
         await delay(100);
         blockProgress.update(arr.pop(), randNatural(stateList.length - 1) + 1, i === total - 1);
     }
+    blockProgress.end();
 })();
