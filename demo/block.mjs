@@ -1,5 +1,9 @@
-const { BlockProgress, CONSTANTS: { BACKGROUND } } = require('../');
-const { delay, randNatural, shuffle } = require('./assist');
+import { progress, sequence } from '../index.mjs';
+import { delay, randNatural, shuffle } from './assist.mjs';
+
+const { BlockProgress } = progress;
+
+const BACKGROUND = sequence.CONSTANTS.BACKGROUND;
 
 (async () => {
     const total = 270;

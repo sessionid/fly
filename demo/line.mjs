@@ -1,5 +1,7 @@
-const { LineProgress } = require('../');
-const { delay } = require('./assist');
+import { progress } from '../index.mjs';
+import { delay } from './assist.mjs';
+
+const { LineProgress } = progress;
 
 (async() => {
     const lineProgress = new LineProgress(40, { undoneColor: 'red' });

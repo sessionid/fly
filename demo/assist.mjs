@@ -9,4 +9,4 @@ const shuffle = (list) => {
     return list;
 };
 
-module.exports = { delay, randNatural, shuffle };
+export { delay, randNatural, shuffle };

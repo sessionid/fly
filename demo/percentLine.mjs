@@ -1,5 +1,7 @@
-const { PercentLineProgress } = require('../');
-const { delay } = require('./assist');
+import { progress } from '../index.mjs';
+import { delay } from './assist.mjs';
+
+const { PercentLineProgress } = progress;
 
 (async() => {
     const lineProgress = new PercentLineProgress(40);
